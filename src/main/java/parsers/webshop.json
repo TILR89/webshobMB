@@ -1,0 +1,80 @@
+{
+    "Users": [
+      {
+        "user_id": 11,
+        "user_name" : "Billy Idol",
+        "user_email": "b@hmail.com",
+        "user_password": "123"
+      },
+      {
+        "user_id": 12,
+        "user_name" : "Willy Parser",
+        "user_email": "w@hmail.com",
+        "userPassword": "psd"},
+      {
+        "user_id": 13,
+        "user_name" : "John Dow",
+        "user_email": "d@hmail.com",
+        "user_password": "dps"}
+    ],
+    "orders": [
+      {
+        "orderId": 10,
+        "userId": 10,
+        "userName": "Billy Idol",
+        "userEmail": "b@hmail.com"
+      },
+      {
+        "orderId": 11,
+        "userId": 11,
+        "userName": "Willy Parser",
+        "userEmail": "w@hmail.com"
+      },
+      { "orderId": 12,
+        "userId": 12,
+        "userName": "John Dow",
+        "userEmail": "d@hmail.com"
+      }
+    ],
+    "products": [
+      {
+        "productName": "Burger",
+        "productPrice": 2.90,
+        "productDescription": "The best for the price",
+        "shoppingCart": 11
+      },
+      {
+        "productName": "Cola",
+        "productPrice": 1.90,
+        "productDescription": "0,33l can",
+        "shoppingCart": 12
+      },
+      {
+        "productName": "Sport car",
+        "productPrice": 199999.99,
+        "productDescription": "4 wheels, 400 hp, color: red",
+        "shoppingCart": 13}
+    ],
+    "suppliers": [
+      {
+        "supplierId":4,
+        "supplierName": "Fuzzy Group"
+      },
+      {"supplierId":5,
+        "supplierName": "Beijing cars"}
+    ],
+    "deliveries": [
+      {
+        "deliveryId": 10,
+        "deliveryStatus": "ordered",
+        "userId": 10
+      },
+      { "deliveryId": 11,
+        "deliveryStatus": "ordered",
+        "userId": 11},
+      { "deliveryId": 12,
+        "deliveryStatus": "ordered",
+        "userId": 12}
+    ]
+
+}

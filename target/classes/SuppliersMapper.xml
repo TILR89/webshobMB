@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace = "Suppliers">
+
+    <resultMap id = "result" type = "entity.Suppliers">
+        <result property = "supplier_id" column = "supplier_id"/>
+    </resultMap>
+
+    <select id = "getAll" resultMap = "result">
+        SELECT * FROM suppliers;
+    </select>
+
+    <select id = "getById" parameterType = "int" resultMap = "result">
+        SELECT * FROM suppliers WHERE supplier_id = #{supplier_id};
+    </select>
+
+</mapper>

@@ -1,0 +1,21 @@
+
+     [
+      {
+        "user_id": 11,
+        "user_name" : "Billy Idol",
+        "user_email": "b@hmail.com",
+        "user_password": "123"
+      },
+      {
+        "user_id": 12,
+        "user_name" : "Willy Parser",
+        "user_email": "w@hmail.com",
+        "user_password": "psd"},
+      {
+        "user_id": 13,
+        "user_name" : "John Dow",
+        "user_email": "d@hmail.com",
+        "user_password": "dps"}
+    ]
+
+

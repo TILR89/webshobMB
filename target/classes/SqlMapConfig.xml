@@ -1,0 +1,44 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<configuration>
+    <typeAliases>
+        <typeAlias type="entity.Users" alias="users"/>
+        <typeAlias type="entity.Suppliers" alias="suppliers"/>
+        <typeAlias type="entity.ShoppingCart" alias="shopping_cart"/>
+        <typeAlias type="entity.Products" alias="products"/>
+        <typeAlias type="entity.ProductCategories" alias="products_categories"/>
+        <typeAlias type="entity.Payment" alias="payment"/>
+        <typeAlias type="entity.Orders" alias="orders"/>
+        <typeAlias type="entity.Delivery" alias="delivery"/>
+        <typeAlias type="entity.Categories" alias="categories"/>
+    </typeAliases>
+
+    <environments default="development">
+        <environment id="development">
+            <transactionManager type="JDBC"/>
+
+            <dataSource type="POOLED">
+                <property name="driver" value="com.mysql.cj.jdbc.Driver"/>
+                <property name="url" value="jdbc:mysql://localhost:3306/webshop"/>
+                <property name="username" value="root"/>
+                <property name="password" value="zxcv1234!"/>
+            </dataSource>
+
+        </environment>
+    </environments>
+
+    <mappers>
+        <mapper resource="UsersMapper.xml"/>
+        <mapper resource="OrdersMapper.xml"/>
+        <mapper resource="SuppliersMapper.xml"/>
+        <mapper resource="ShoppingCartMapper.xml"/>
+        <mapper resource="ProductsMapper.xml"/>
+        <mapper resource="PaymentMapper.xml"/>
+        <mapper resource="DeliveryMapper.xml"/>
+        <mapper resource="CategoriesMapper.xml"/>
+        <mapper resource="OrderHistoryMapper.xml"/>
+    </mappers>
+
+</configuration>

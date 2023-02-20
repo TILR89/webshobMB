@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<customers>
+    <users id="4">
+        <user_name>John Doe</user_name>
+        <user_email>doe@gotmail.com</user_email>
+        <user_password>123doe</user_password>
+
+    </users>
+
+    <users id="5">
+        <user_name>Don Jones</user_name>
+        <user_email>don@gotmail.com</user_email>
+        <user_password>123don</user_password>
+    </users>
+
+    <users id="6">
+        <user_name>Joe Tribiano</user_name>
+        <user_email>joe@gotmail.com</user_email>
+        <user_password>123joe</user_password>
+    </users>
+
+</customers>
+

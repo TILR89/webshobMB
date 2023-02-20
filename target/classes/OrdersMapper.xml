@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace = "Orders">
+
+    <resultMap id = "result" type = "entity.Orders">
+        <result property = "order_id" column = "order_id"/>
+        <result property = "user_id" column = "user_id"/>
+    </resultMap>
+
+    <select id = "getAll" resultMap = "result">
+        SELECT * FROM orders;
+    </select>
+
+    <select id = "getById" parameterType = "int" resultMap = "result">
+        SELECT * FROM orders WHERE order_id = #{order_id};
+    </select>
+
+    <select id = "getOrdersByUserId" parameterType = "int" resultMap = "result">
+        SELECT * FROM orders WHERE user_id = #{user_id};
+    </select>
+
+</mapper>
